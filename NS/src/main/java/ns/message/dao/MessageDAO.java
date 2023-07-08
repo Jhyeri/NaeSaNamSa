@@ -20,6 +20,7 @@ public class MessageDAO extends AbstractDAO {
 	}
 
 	// 현재 사용자가 해당 room에서 안읽은 메세지의 개수를 가져온다.
+	@SuppressWarnings("unchecked")
 	public Map<String, Object> countUnread(Map<String, Object> map) throws Exception {
 		System.out.println("count_unread 쿼리에 전달된 파라미터 : " + map);
 

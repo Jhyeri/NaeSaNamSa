@@ -65,20 +65,26 @@ $(document).ready(function() {
 	
 	function fn_naverLogin() {
 		var comSubmit = new ComSubmit();
-		
+		//네이버 로그인 창 불러오는 요청주소. 
 		var str = 'https://nid.naver.com/oauth2.0/authorize?response_type=code&'; // naver에 요청
 		str += 'client_id=3kvMcStoYugzaUkMxzep&'; // client_id
 		str += 'state=rjswnTlsms30tkf&'; // 보안 관련 임의값
 		str += 'redirect_uri=http://localhost:8080/ns/loginNaver'; // 콜백 URL
+		//물음표 뒤부터는 get방식으로 요청 보낼 파라미터
+		//클라이언트 아이디, state, redirect_uri를 전송하면 네이버 로그인 창이 뜸 (url에서 get방식 요청임을 확인 가능)
+		//redirect_uri에 쓴 url을 따라가면 컨트롤러와 매핑됨 (컨트롤러 참고)
 		
 		comSubmit.setUrl(str);
 		comSubmit.submit();
 	};
 	
-	
+//네이버 개발자센터 접속
+//내 애플리케이션 등록하고, 사용자로부터 받을 정보와 URL 등등을 지정함
+
 	
 });
 </script>
+
 
 </body>
 </html>

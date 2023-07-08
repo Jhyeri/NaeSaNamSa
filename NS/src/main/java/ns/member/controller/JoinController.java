@@ -23,8 +23,6 @@ public class JoinController {
 
 	@Resource(name = "joinService")
 	private JoinService joinService;
-	// ServiceImpl 객체 주입
-	// @Service를 통해 joinService란 이름으로 빈 등록했던 ServiceImpl
 
 	// 회원가입 폼 띄우기
 	@RequestMapping(value = "/joinForm")

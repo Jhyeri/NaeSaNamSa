@@ -50,23 +50,19 @@ public class MyPageController {
 		log.debug("###### 마이페이지 비밀번호 확인 ######");
 		Map<String, Object> result = new HashMap<>();
 
-		// 탈퇴 비밀번호 확인과 코드가 중복되어 생각 중,,
 		HttpSession session = request.getSession();
 
-		// 세션에 등록된 회원정보를 가져온다.
+		// 세션에 등록된 회원정보
 		Map<String, Object> member = (Map<String, Object>) session.getAttribute("session_MEM_INFO");
 
 		Map<String, Object> dbpasswd = myPageService.selectPwCheck(member);
 
 		String realPw = (String) dbpasswd.get("MEM_PW");
-		System.out.println("DB에서 가져온 비밀번호 : " + realPw);
 
 		String inputPw = (String) map.get("MEM_PW");
-		System.out.println("입력받은 비밀번호 : " + inputPw);
 
 		if (inputPw != null) {
 			if (realPw.equals(inputPw)) { // 둘이 비교 후 일치하면
-				// pwCheck = 1;
 				result.put("result", "success");
 			} else { // 일치하지 않으면
 				result.put("result", "fail");
@@ -75,6 +71,7 @@ public class MyPageController {
 		return result;
 	}
 
+	@SuppressWarnings("unchecked")
 	@RequestMapping(value = "/myPage/main")
 	public ModelAndView myPageMain(CommandMap commandMap, HttpServletRequest request) throws Exception {
 		log.debug("###### 마이페이지 메인 ######");
@@ -88,8 +85,6 @@ public class MyPageController {
 
 		mv.addObject("MEM_NUM", session_mem_num);
 		mv.addObject("MEM_NICKNAME", nickName); // 마이페이지 메인에서 사용함
-
-		System.out.println("세션 영역에 저장된 닉네임 : " + nickName);
 
 		return mv;
 	}
@@ -115,6 +110,7 @@ public class MyPageController {
 		return mv;
 	}
 
+	@SuppressWarnings("unchecked")
 	@RequestMapping(value = "/myPage/accountModify")
 	public ModelAndView accountModify(CommandMap commandMap, HttpServletRequest request) throws Exception {
 		log.debug("###### 마이페이지 회원정보 수정 ######");
@@ -145,7 +141,6 @@ public class MyPageController {
 	@RequestMapping(value = "/myPage/accountDeletePw") // ajax, 리턴값을 가지고 success 메소드에서 조건문으로 처리
 	public @ResponseBody String accountDeletePw(CommandMap commandMap, HttpServletRequest request) throws Exception {
 		log.debug("###### 마이페이지 회원탈퇴 비밀번호 확인 ######");
-		// int pwCheck = 0; // pw 일치 여부를 확인하고 결과를 리턴
 		String result = "";
 
 		HttpSession session = request.getSession();
@@ -155,14 +150,11 @@ public class MyPageController {
 		// db에서 가져온 비밀번호
 		Map<String, Object> dbpasswd = myPageService.selectPwCheck(map);
 		String realPw = (String) dbpasswd.get("MEM_PW");
-		System.out.println("DB에서 가져온 비밀번호 : " + realPw);
+		
 		// 입력받은 비밀번호
-
 		String inputPw = (String) commandMap.get("MEM_PW");
-		System.out.println("입력받은 비밀번호 : " + inputPw);
 
 		if (realPw.equals(inputPw)) { // 둘이 비교 후 일치하면
-			// pwCheck = 1;
 			result = "success";
 		} else { // 데이터가 존재하지 않는다면 비밀번호 틀림
 			result = "fail";
@@ -171,10 +163,11 @@ public class MyPageController {
 		return result;
 	}
 
+	@SuppressWarnings("unchecked")
 	@RequestMapping(value = "/myPage/accountDelete")
 	public @ResponseBody int accountDelete(@CookieValue(value = "emailCookie", required = false) Cookie emailCookie,
-			@CookieValue(value = "pwCookie", required = false) Cookie pwCookie, CommandMap commandMap,
-			HttpServletRequest request, HttpServletResponse response) throws Exception {
+			@CookieValue(value = "pwCookie", required = false) Cookie pwCookie,
+			CommandMap commandMap, HttpServletRequest request, HttpServletResponse response) throws Exception {
 
 		log.debug("###### 마이페이지 회원탈퇴 ######");
 
@@ -188,7 +181,6 @@ public class MyPageController {
 		// 탈퇴처리된 회원의 수를 리턴
 
 		if (result == 1) { // 탈퇴 성공이면 1
-			System.out.println("컨트롤러에서 탈퇴 성공 여부 : " + result);
 
 			// 탈퇴 후 등록한 상품 모두 삭제
 			myPageService.updateGoodsDelGB(commandMap.getMap());
@@ -203,8 +195,6 @@ public class MyPageController {
 				System.out.println("#########쿠키 삭제하기 #######");
 				Cookie cookie1 = new Cookie("emailCookie", ""); // 쿠키의 값을 비움
 				Cookie cookie2 = new Cookie("pwCookie", "");
-
-				System.out.println("삭제할 쿠키 : " + emailCookie.toString() + ", " + pwCookie.toString());
 
 				Cookie[] cookies = { cookie1, cookie2 };
 				for (int i = 0; i < cookies.length; i++) {

@@ -49,7 +49,6 @@ public class LoginController {
 			throws Exception {
 
 		log.debug("###### 로그인 ######");
-		// ModelAndView mv = new ModelAndView("loginForm");
 		String result = "";
 		System.out.println("로그인 요청에 들어온 commandMap : " + commandMap.getMap());
 
@@ -115,12 +114,7 @@ public class LoginController {
 			}
 
 		}
-		// result 출력
-		log.debug(result);
 
-		// mv.addObject("result", result);
-
-		// return mv;
 		return result;
 	}
 
@@ -131,7 +125,6 @@ public class LoginController {
 		log.debug("###### 로그아웃 ######");
 		ModelAndView mv = new ModelAndView("redirect:/main");
 
-//		HttpSession session = request.getSession(false);
 		HttpSession session = request.getSession();
 		if (session != null) {
 			if (session.getAttribute("session_MEM_KAKAO") != null) {

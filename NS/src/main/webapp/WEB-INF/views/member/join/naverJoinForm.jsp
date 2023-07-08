@@ -419,6 +419,8 @@ $(document).ready(function() {
 		var memZip = $('#MEM_ZIP').val();
 		var memAdd1 = $('#MEM_ADD1').val();
 		var memAdd2 = $('#MEM_ADD2').val();
+		//네이버로부터 받은 정보 외에 닉네임, 주소를 더 추가적으로 받기 위해 작성한 JSP임
+		//닉네임은 기존회원과 중복 가능성 있어서 네이버로부터 받아오지 않았음
 		
 	    var formData = new FormData();
         formData.append("MEM_EMAIL", memEmail);
