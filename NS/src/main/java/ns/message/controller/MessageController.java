@@ -184,7 +184,7 @@ public class MessageController {
 		// 쿼리 실행 : 메세지 내용을 가져온다.
 		List<Map<String, Object>> list = messageService.roomContentList(commandMap.getMap());
 
-		// 회원번호, 회원 정지여부, 탈퇴여부를 map에 넣기 (list에 넣기 위해. jsp에서 사용해야 함)
+		// 회원번호, 회원 정지여부, 탈퇴여부를 map에 넣기
 		Map<String, Object> map = new HashMap<String, Object>();
 		map.put("MEM_NUM", commandMap.get("MEM_NUM").toString());
 		map.put("MEM_STATUS", commandMap.get("MEM_STATUS"));

@@ -157,7 +157,7 @@
                $('.send_message').html(send_msg);
                
                //글자수 제한
-               Validate();
+               validate();
             
                 // 메세지 전송버튼을 눌렀을 때
                 $('.msg_send_btn').on('click',function(){
@@ -232,7 +232,7 @@
                $('.send_message').html(send_msg);
                
                //글자수 제한
-              Validate();
+              validate();
                
                // 메세지 전송버튼을 눌렀을 때
                $('.msg_send_btn').on('click',function(){
@@ -407,7 +407,7 @@
                   $('.send_message').html(send_msg);
                   
                   //글자수 제한
-                  Validate();
+                  validate();
                   
                   // 메세지 전송버튼을 눌렀을 때
                    $('.msg_send_btn').on('click',function(){
@@ -434,7 +434,7 @@
     
    };
   
-   const Validate = function() {
+   const validate = function() {
    $('#write').keyup(function () {
   	  var inputLength = $(this).val().length;
   	   
