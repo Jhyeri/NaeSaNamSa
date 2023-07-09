@@ -407,7 +407,7 @@
                   $('.send_message').html(send_msg);
                   
                   //글자수 제한
-                  validate();
+                  validate(); 
                   
                   // 메세지 전송버튼을 눌렀을 때
                    $('.msg_send_btn').on('click',function(){
