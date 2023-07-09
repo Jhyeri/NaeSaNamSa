@@ -49,7 +49,6 @@ public class MessageController {
 
 		for (int i = 0; i < list.size(); i++) {
 			int chatRoom = Integer.parseInt(list.get(i).get("CHAT_ROOM").toString());
-			System.out.println("chatRoom : " + chatRoom);
 			commandMap.put("CHAT_ROOM", chatRoom);
 
 			// 반복문에서 상대방 닉네임을 위해 저장했던 mem_num이 계속 유지되며 반복하기 때문에
@@ -124,7 +123,6 @@ public class MessageController {
 
 		for (int i = 0; i < list.size(); i++) {
 			int chatRoom = Integer.parseInt(list.get(i).get("CHAT_ROOM").toString());
-			System.out.println("chatRoom : " + chatRoom);
 			commandMap.put("CHAT_ROOM", chatRoom);
 
 			// 반복문에서 상대방 닉네임을 위해 저장했던 mem_num이 계속 유지되며 반복하기 때문에
@@ -216,9 +214,7 @@ public class MessageController {
 		commandMap.put("MEM_NUM", memNum);
 
 		int send_num = Integer.parseInt(commandMap.get("CHAT_SEND_NUM").toString());
-		System.out.println("send_num:" + send_num);
 		int recv_num = Integer.parseInt(commandMap.get("CHAT_RECV_NUM").toString());
-		System.out.println("recv_num:" + recv_num);
 
 		if (send_num == memNum) { // 현재 사용자가 보낸사람이라면
 			commandMap.put("CHAT_RECV_NUM", recv_num); // 받은사람의 회원번호를 commandMap에 저장
