@@ -41,7 +41,8 @@
 </br>
 
 ## 3. ERD 설계
-![ERD_20230130_최종](https://github.com/Jhyeri/NaeSaNamSa/assets/111175466/6c548204-f288-4277-991a-326d7795ca11)
+<!-- ![ERD_20230130_최종](https://github.com/Jhyeri/NaeSaNamSa/assets/111175466/6c548204-f288-4277-991a-326d7795ca11) -->
+<img width="90%" src="https://github.com/Jhyeri/NaeSaNamSa/assets/111175466/6c548204-f288-4277-991a-326d7795ca11"/>
 
 ## 4. 핵심 기능  
 - 상품에 대한 CRUD가 주기능을 이루고 있습니다.
@@ -52,7 +53,7 @@
 <div markdown="1">
 
 ### 4.1. 카카오페이 결제
-  - 카카오페이 API를 사용하여 간편하게 결제할 수 있습니다.  :pushpin: [코드 확인](https://github.com/taek-s/NaeSaNamSa/blob/main/NS/src/main/java/ns/kakaopay/controller/KakaoPayController.java) 
+  - 카카오페이 API를 사용하여 간편하게 결제할 수 있습니다.  :pushpin: [코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/kakaopay/controller/KakaoPayController.java) 
 
 ### 4.2. 메시지
   - 판매자와 구매자가 원활하게 소통하도록 메시지 기능을 제공합니다. :pushpin: [코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/message/controller/MessageController.java)
