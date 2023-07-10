@@ -41,7 +41,7 @@
 </br>
 
 ## 3. ERD 설계
-<img width="60%" src="https://github.com/Jhyeri/NaeSaNamSa/assets/111175466/fa89c85b-4296-4af5-a608-7b2dc4a9e7e1"/>
+<img width="60%" src="https://github.com/Jhyeri/NaeSaNamSa/assets/111175466/fa89c85b-4296-4af5-a608-7b2dc4a9e7e1"/><br/>
 
 ## 4. 프로젝트의 핵심 기능  
 - 상품에 대한 CRUD가 주기능을 이루고 있습니다.
@@ -51,13 +51,23 @@
 <summary><b>핵심 기능 설명 펼치기</b></summary>
 <div markdown="1">
 
+
 ### 4.1. 카카오페이 결제
   - 카카오페이 API를 사용하여 간편하게 결제할 수 있습니다.  :pushpin: [코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/kakaopay/controller/KakaoPayController.java) 
 
 ### 4.2. 메시지
   - 판매자와 구매자가 원활하게 소통하도록 메시지 기능을 제공합니다. :pushpin: [코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/message/controller/MessageController.java)
   - :pushpin: [코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/webapp/WEB-INF/views/message/messageList.jsp)
-  
+
+<details>
+<summary><b>코드 확인</b></summary>
+<div markdown="2">
+:pushpin: [Controller 코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/message/controller/MessageController.java)
+:pushpin: [JSP 코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/webapp/WEB-INF/views/message/messageList.jsp)  
+</div>
+</details>
+<br/>
+
 ### 4.3. 이메일 인증 
   - JavaMail API를 사용하여 회원가입 시 이메일 인증이 이루어집니다.<br/>
   :pushpin: [코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/common/common/MailHandler.java)<br/>
