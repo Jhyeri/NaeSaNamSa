@@ -76,22 +76,25 @@
     <summary><b>코드 확인</b></summary>
     <div markdown="1">
       
-    :pushpin:[코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/common/common/MailHandler.java)<br/>
-    :pushpin:[코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/member/service/MailServiceImpl.java)  
+    :pushpin:[MailHandler 코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/common/common/MailHandler.java)<br/>
+    :pushpin:[Service 코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/member/service/MailServiceImpl.java)  
     </div>
     </details>
     <br/>
     
-### 4.4. 다중 이미지 업로드 / 업로드 전 썸네일 확인 / 이미지 수정 
-  - 상품 등록, 수정 시 다중 이미지 업로드가 가능합니다.
-  - 업로드 전 썸네일을 통해 첨부한 이미지를 미리 확인할 수 있습니다. 
-  - 이미지 수정이 간편하도록 하였습니다.
+### 4.4. 파일 업로드
+  - **다중 이미지 업로드** 
+    - 상품 등록, 수정 시 다중 이미지 업로드가 가능합니다.
+  - **썸네일**
+    - 업로드 전 썸네일을 통해 첨부한 이미지를 미리 확인할 수 있습니다.
+  - **이미지 수정** 
+    - 이미지 수정이 간편하도록 하였습니다.
     <details>
     <summary><b>코드 확인</b></summary>
     <div markdown="1">
       
-    :pushpin:[코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/shop/controller/ShopController.java)<br/>
-    :pushpin:[코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/shop/service/ShopServiceImpl.java)  
+    :pushpin:[Controller 코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/shop/controller/ShopController.java)<br/>
+    :pushpin:[Service 코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/shop/service/ShopServiceImpl.java)  
 
     </div>
     </details>
