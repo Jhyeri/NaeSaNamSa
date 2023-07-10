@@ -9,7 +9,7 @@
 
 </br>
 
-## 2. 사용 기술
+## 2. 프로젝트에 사용된 기술
 #### `Back-end`
   - Java (JDK 1.8)
   - Spring Framework 4.0.4
