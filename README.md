@@ -90,12 +90,12 @@
   - **이미지 수정** 
     - 이미지 수정이 간편하도록 하였습니다. <br/>
     
-    <details>
-    <summary><b>코드 확인</b></summary>
-    <div markdown="1">
-      
-    :pushpin:[Controller 코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/shop/controller/ShopController.java)<br/>
-    :pushpin:[Service 코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/shop/service/ShopServiceImpl.java)  
+  <details>
+  <summary><b>코드 확인</b></summary>
+  <div markdown="1">
+    
+  :pushpin:[Controller 코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/shop/controller/ShopController.java)<br/>
+  :pushpin:[Service 코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/shop/service/ShopServiceImpl.java)  
 
     </div>
     </details>
