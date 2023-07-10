@@ -231,9 +231,9 @@
 <summary>메세지 목록 정렬 꼬임 문제</summary>
 <div markdown="1">
 
-- **메세지 리스트를 조회하는 쿼리문에서 오라클 힌트가 적용되지 않음**
+- 메세지 리스트를 조회하는 쿼리문에서 오라클 힌트가 적용되지 않음
   <details>
-  <summary>실행된 쿼리문</summary>
+  <summary><b>실행된 쿼리문 확인하기</b></summary>
   <div markdown="2">
   
   ```sql
@@ -258,7 +258,7 @@
   </div>
   </details>
  
- - **힌트 대신 order by절을 사용하여 해결**
+ - 힌트 대신 **order by절**을 사용하여 해결
     <details>
     <summary>수정된 코드</summary>
     <div markdown="2">
