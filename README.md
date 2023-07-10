@@ -70,14 +70,30 @@
 
 ### 4.3. 이메일 인증 
   - JavaMail API를 사용하여 회원가입 시 이메일 인증이 이루어집니다.<br/>
-  :pushpin: [코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/common/common/MailHandler.java)<br/>
-  :pushpin: [코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/member/service/MailServiceImpl.java)
-  
+   <details>
+    <summary><b>코드 확인</b></summary>
+    <div markdown="1">
+      
+    :pushpin:[코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/common/common/MailHandler.java)<br/>
+    :pushpin:[코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/member/service/MailServiceImpl.java)  
+    </div>
+    </details>
+    <br/>
+    
 ### 4.4. 다중 이미지 업로드 / 업로드 전 썸네일 확인 / 이미지 수정 
   - 상품 등록, 수정 시 다중 이미지 업로드가 가능합니다. :pushpin: [코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/shop/controller/ShopController.java)
   - 업로드 전 썸네일을 통해 첨부한 이미지를 미리 확인할 수 있습니다. 
   - 이미지 수정이 간편하도록 하였습니다. :pushpin: [코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/shop/service/ShopServiceImpl.java)
-  
+  <details>
+    <summary><b>코드 확인</b></summary>
+    <div markdown="1">
+      
+    :pushpin:[코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/shop/controller/ShopController.java)<br/>
+    :pushpin:[코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/shop/service/ShopServiceImpl.java)  
+    </div>
+    </details>
+    <br/>
+    
 ### 4.5. 판매자 추천, 후기 작성 
   - 판매자 상세보기 페이지에서 판매자 추천기능과 후기 작성 기능을 제공합니다. :pushpin: [코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/seller/controller/SellerController.java)
 
