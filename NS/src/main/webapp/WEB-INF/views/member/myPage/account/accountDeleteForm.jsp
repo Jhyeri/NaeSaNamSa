@@ -138,8 +138,6 @@ $(document).ready(function() {
 		$.ajax({
 			url:"<c:url value='/myPage/accountDelete'/>",
 			type:'post',
-			//processData: false,
-			//contentType: false,
 			success:function(data){
 				if(data=='1'){
 					alert("회원탈퇴가 완료되었습니다.");

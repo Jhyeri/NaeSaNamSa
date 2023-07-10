@@ -41,7 +41,7 @@ $(document).ready(function() {
 	history.replaceState({}, null, location.pathname);
 });
 	
-	function fn_pwCheck() { // 비밀번호 일치 확인을 위해 해당 함수를 ajax로 수정
+	function fn_pwCheck() {
 		
 		var inputPw = $("#MEM_PW").val();
 		var jsonPw = {"MEM_PW":inputPw};

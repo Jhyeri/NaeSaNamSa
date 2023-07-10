@@ -704,14 +704,8 @@ $(document).ready(function() {
 		fn_nicknameCheck();
 	});
 	
-	/* $("button[name='join']").on("click", function(e) { //
-		e.preventDefault();
-		fn_checkMember();
-	}); */
 	
-		 	//alert가 fail까지 표시되어 두번 뜸
-		   function fn_nicknameCheck() { //함수를 ajax 형식으로 수정 필요
-		      
+		   function fn_nicknameCheck() { 
 		 	   var memNick = $('#MEM_NICKNAME').val();
 		       var MEM_NICKNAME = {MEM_NICKNAME : memNick};
 		   
@@ -755,7 +749,7 @@ $(document).ready(function() {
 		   };
 	
 	$('#mail-Check-Btn').on("click", function(e) {
-		const email = $('#MEM_EMAIL').val(); // 이메일 주소값 얻어오기!
+		const email = $('#MEM_EMAIL').val(); // 이메일 주소값 얻어오기
 		const emailRule = /^[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}$/;
 		
 		if(email == null || $.trim(email) == "" || !emailRule.test(email)) {
@@ -782,7 +776,7 @@ $(document).ready(function() {
 		const emailAuth = function(){
 			$.ajax({
 				type : 'get',
-				url : '/ns/join/emailAuth?email='+email, // GET방식이라 Url 뒤에 email을 뭍힐수있다.
+				url : '/ns/join/emailAuth?email='+email,
 				success : function (data) {
 					code = data;
 					alert('인증번호가 전송되었습니다.')

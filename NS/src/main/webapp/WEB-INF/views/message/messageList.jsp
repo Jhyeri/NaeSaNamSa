@@ -291,7 +291,6 @@
    const SendMessage = function(room, chatRecvNum, chatSendNum, mem_status, mem_del_gb){
       
       let content = $('.write_msg').val();
-     // alert("content: "+ content);
       
       content = content.trim();
       
@@ -338,7 +337,6 @@
    
    $("#searchBtn").on("click", function(e) {
       e.preventDefault();
-    //  alert("검색시작");
       Search();
    });
    
@@ -368,7 +366,6 @@
                
                // 메세지 리스트중 하나를 클릭했을 때
                $('.chat_list').on('click', function(){
-                //  alert('room : '+ $(this).attr('room'));
                   
                   let room = $(this).attr('room');
                   let chatRecvNum = $(this).attr('chatRecvNum');
