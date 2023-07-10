@@ -55,23 +55,21 @@
   - 카카오페이 API를 사용하여 간편하게 결제할 수 있습니다.  :pushpin: [코드 확인](https://github.com/taek-s/NaeSaNamSa/blob/main/NS/src/main/java/ns/kakaopay/controller/KakaoPayController.java) 
 
 ### 4.2. 메시지
-  - 판매자와 구매자가 원활하게 소통하도록 메시지 기능을 제공합니다. :pushpin: [코드 확인](https://github.com/taek-s/NaeSaNamSa/blob/main/NS/src/main/java/ns/message/controller/MessageController.java)
+  - 판매자와 구매자가 원활하게 소통하도록 메시지 기능을 제공합니다. :pushpin: [코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/message/controller/MessageController.java)
+  - :pushpin: [코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/webapp/WEB-INF/views/message/messageList.jsp)
   
 ### 4.3. 이메일 인증 
   - JavaMail API를 사용하여 회원가입 시 이메일 인증이 이루어집니다.<br/>
-  :pushpin: [MailHandler코드 확인]()<br/>
-  :pushpin: [MailServiceImpl코드 확인]()
-<!-- https://github.com/taek-s/NaeSaNamSa/blob/main/NS/src/main/java/ns/common/common/MailHandler.java<br/>
-https://github.com/taek-s/NaeSaNamSa/blob/main/NS/src/main/java/ns/member/service/MailServiceImpl.java -->
+  :pushpin: [코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/common/common/MailHandler.java)<br/>
+  :pushpin: [코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/member/service/MailServiceImpl.java)
   
 ### 4.4. 다중 이미지 업로드 / 업로드 전 썸네일 확인 / 이미지 수정 
-  - 상품 등록, 수정 시 다중 이미지 업로드가 가능합니다. :pushpin: [코드 확인]()
+  - 상품 등록, 수정 시 다중 이미지 업로드가 가능합니다. :pushpin: [코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/shop/controller/ShopController.java)
   - 업로드 전 썸네일을 통해 첨부한 이미지를 미리 확인할 수 있습니다. 
   - 이미지 수정이 간편하도록 하였습니다. :pushpin: [코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/shop/service/ShopServiceImpl.java)
-<!-- https://github.com/taek-s/NaeSaNamSa/blob/main/NS/src/main/java/ns/shop/controller/ShopController.java<br/>
   
 ### 4.5. 판매자 추천, 후기 작성 
-  - 판매자 상세보기 페이지에서 판매자 추천기능과 후기 작성 기능을 제공합니다. :pushpin: [코드 확인](https://github.com/taek-s/NaeSaNamSa/blob/main/NS/src/main/java/ns/seller/controller/SellerController.java)
+  - 판매자 상세보기 페이지에서 판매자 추천기능과 후기 작성 기능을 제공합니다. :pushpin: [코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/seller/controller/SellerController.java)
 
 </div>
 </details>
@@ -86,11 +84,11 @@ https://github.com/taek-s/NaeSaNamSa/blob/main/NS/src/main/java/ns/member/servic
 <div markdown="1">
 
 ### 5.1. 회원가입  
-  - **닉네임 중복확인** 📌[코드 확인]()
+  - **닉네임 중복확인** 📌[코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/member/controller/JoinController.java#L39)
     - ajax 요청을 통해 데이터베이스로부터 사용자가 입력한 것과 동일한 닉네임을 불러옵니다.
     - 데이터가 존재하면 "fail", 존재하지 않으면 "success" 문자열을 리턴합니다.
   
-  - **회원가입 가능 여부 체크** 📌[코드 확인]()
+  - **회원가입 가능 여부 체크** 📌[코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/member/controller/JoinController.java#L78)
     - 사용자가 입력한 정보를 통해 재가입/신규가입 여부를 확인합니다.
     - 재가입일 경우, 탈퇴 후 7일이 경과하였는지 확인하고 가입을 진행합니다.
   
@@ -99,38 +97,38 @@ https://github.com/taek-s/NaeSaNamSa/blob/main/NS/src/main/java/ns/member/servic
   - 존재하지 않는 이메일이면 "emailfail",
   - 비밀번호가 일치하지 않으면 "pwfail",
   - 정지된 회원이면 "suspended" 문자열을 리턴합니다.<br/>
-📌[코드 확인]()
+📌[코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/member/controller/LoginController.java#L48)
   
 ### 5.2.1 로그인 유지
-  - **최초 이용 시** 📌[코드 확인](로그인컨트롤러코드)
+  - **최초 이용 시** 📌[코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/member/controller/LoginController.java#L78)
     - 이메일과 비밀번호로 쿠키를 생성하고 response영역에 추가합니다. 
-  - **유지 상태로 사이트 접속 시** 📌[코드 확인](쿠키인터셉터)
+  - **유지 상태로 사이트 접속 시** 📌[코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/common/interceptor/CookieInterceptor.java)
     - 인터셉터를 사용하여 접속 직후 바로 로그인 처리합니다.
   
 ### 5.3. 아이디/비밀번호 찾기
-  - ajax 요청을 통해 사용자가 입력한 정보와 일치하는 회원의 이메일을 string 형태로 리턴하여 JSP에 출력합니다. 📌[코드 확인](로그인컨트롤러코드)
+  - ajax 요청을 통해 사용자가 입력한 정보와 일치하는 회원의 이메일을 string 형태로 리턴하여 JSP에 출력합니다. 📌[코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/member/controller/LoginController.java#L159)
   
 ### 5.4. 마이페이지  
-  - **회원정보 수정** 📌[코드 확인]()
+  - **회원정보 수정** 📌[코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/myPage/controller/MyPageController.java#L115)
   
-  - **회원 탈퇴** 📌[코드 확인]()
+  - **회원 탈퇴** 📌[코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/myPage/controller/MyPageController.java#L168)
     - 데이터베이스에서 회원의 탈퇴여부를 'Y'로 update합니다.
     - 회원이 등록한 상품의 삭제여부도 'Y'로 update합니다.
     - 로그인 유지를 위해 생성하였던 쿠키를 삭제합니다.
 
 ### 5.5. 메세지
- - **메세지 목록** :pushpin: [코드 확인](https://github.com/taek-s/NaeSaNamSa/blob/main/NS/src/main/java/ns/message/controller/MessageController.java#L30)
+ - **메세지 목록** :pushpin: [코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/message/controller/MessageController.java#L30)
     - 메세지 내용, 안 읽은 메세지 개수, 상대 회원의 정보를 불러옵니다.
     - 상대 회원의 정보를 불러오기 위해 각 메세지의 발신자와 수신자의 회원번호를 로그인 유저와 비교하여 상대의 회원번호를 추출합니다.
   
-  - **메세지 목록 새로고침** :pushpin: [코드 확인](https://github.com/taek-s/NaeSaNamSa/blob/main/NS/src/main/java/ns/message/controller/MessageController.java#L107)
+  - **메세지 목록 새로고침** :pushpin: [코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/message/controller/MessageController.java#L107)
     - 사용자의 모든 요청이 발생할 때마다 ajax 요청을 통해 메세지 목록을 리로드하여 새 메세지가 실시간으로 보이도록 합니다.
   
-  - **메세지 상세보기** 📌 [코드 확인](https://github.com/taek-s/NaeSaNamSa/blob/main/NS/src/main/java/ns/message/controller/MessageController.java#L189)
+  - **메세지 상세보기** 📌 [코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/message/controller/MessageController.java#L189)
     - ajax 요청을 통해 채팅방 내용을 비동기식으로 불러옵니다.
     - 채팅방 클릭 시 새 메세지를 읽음처리하여 DB에 반영합니다.
   
-  - **메세지 전송** 📌 [코드 확인](https://github.com/taek-s/NaeSaNamSa/blob/main/NS/src/main/java/ns/message/controller/MessageController.java#L238)
+  - **메세지 전송** 📌 [코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/message/controller/MessageController.java#L238)
     - 두 회원 간 메세지를 주고받은 이력이 있는지 체크합니다.
       - 이력이 없다면 DB에서 가져 온 채팅방 번호의 최대값에 1을 더하여 새로운 번호의 채팅방을 생성합니다.
        - 메세지함이 아닌 다른 페이지에서 메세지를 전송할 경우, "viewName"이라는 string 형태의 파라미터를 추가로 전송하여 view를 다르게 처리합니다. 
