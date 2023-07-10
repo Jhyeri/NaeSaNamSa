@@ -57,12 +57,10 @@
   - 카카오페이 API를 사용하여 간편하게 결제할 수 있습니다.  :pushpin: [코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/kakaopay/controller/KakaoPayController.java) 
 
 ### 4.2. 메시지
-  - 판매자와 구매자가 원활하게 소통하도록 메시지 기능을 제공합니다. :pushpin: [코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/message/controller/MessageController.java)
-  - :pushpin: [코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/webapp/WEB-INF/views/message/messageList.jsp)
-
+  - 판매자와 구매자가 원활하게 소통하도록 메시지 기능을 제공합니다.
   <details>
   <summary><b>코드 확인</b></summary>
-  <div markdown="2">
+  <div markdown="1">
     
   :pushpin:[Controller 코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/message/controller/MessageController.java)<br/>
   :pushpin:[JSP 코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/webapp/WEB-INF/views/message/messageList.jsp)  
