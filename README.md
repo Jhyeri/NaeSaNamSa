@@ -307,7 +307,7 @@
   <br/>
   
     - 주석처리된 <c:when>의 조건절에서 오류 발견
-    - '<c:otherwise>'로 수정하여 해결
+    - <c:otherwise>로 수정하여 해결
  
 </div>
 </details>  
