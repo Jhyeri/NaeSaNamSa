@@ -97,9 +97,9 @@
   :pushpin:[Controller 코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/shop/controller/ShopController.java)<br/>
   :pushpin:[Service 코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/shop/service/ShopServiceImpl.java)  
 
-    </div>
-    </details>
-    <br/>
+  </div>
+  </details>
+  <br/>
     
 ### 4.5. 판매자 추천, 후기 작성 
   - 판매자 상세보기 페이지에서 판매자 추천기능과 후기 작성 기능을 제공합니다. :pushpin: [코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/seller/controller/SellerController.java)
