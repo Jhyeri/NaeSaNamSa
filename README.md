@@ -60,7 +60,7 @@
   - 판매자와 구매자가 원활하게 소통하도록 메시지 기능을 제공합니다.
 
     <details>
-    <summary><b>코드 확인</b></summary>
+    <summary><b>:pushpin: 코드 확인</b></summary>
     <div markdown="1">
       
     :pushpin:[Controller 코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/message/controller/MessageController.java)<br/>
@@ -73,7 +73,7 @@
   - JavaMail API를 사용하여 회원가입 시 이메일 인증이 이루어집니다.<br/>
   
     <details>
-    <summary><b>코드 확인</b></summary>
+    <summary><b>:pushpin: 코드 확인</b></summary>
     <div markdown="1">
       
     :pushpin:[MailHandler 코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/common/common/MailHandler.java)<br/>
@@ -93,7 +93,7 @@
     <br/>
     
     <details>
-    <summary><b>코드 확인</b></summary>
+    <summary><b>:pushpin: 코드 확인</b></summary>
     <div markdown="1">
       
     :pushpin:[Controller 코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/shop/controller/ShopController.java)<br/>
