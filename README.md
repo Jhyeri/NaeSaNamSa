@@ -305,7 +305,10 @@
   <img width="60%" src="https://github.com/Jhyeri/NaeSaNamSa/assets/111175466/aecaac35-57ac-4979-a420-48d0db1fe895"/>
   <br/>
   - 주석처리된 <c:when>의 조건절에서 오류 발견
-  - <c:otherwise>로 수정하여 해결 
+  - <c:otherwise>로 수정하여 해결
+  - ㅇ
+  - ㅇ
+  - ㅇ
   
   
 </div>
