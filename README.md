@@ -302,7 +302,7 @@
   
   - 메세지 전송 후, 채팅방에서 상대방의 프로필이미지가 사라지는 문제 발생
   
-  ![jstl](https://github.com/Jhyeri/NaeSaNamSa/assets/111175466/43012f20-af18-4066-9a8d-6af3b8cc03ed)
+  <img width="60%" src="https://github.com/Jhyeri/NaeSaNamSa/assets/111175466/aecaac35-57ac-4979-a420-48d0db1fe895"/>
   <br/>
   - 주석처리된 <c:when>의 조건절에서 오류 발견
   - <c:otherwise>로 수정하여 해결 
