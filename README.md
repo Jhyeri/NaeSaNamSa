@@ -63,10 +63,9 @@
   <details>
   <summary><b>코드 확인</b></summary>
   <div markdown="2">
-  :pushpin: [Controller 코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/message/controller/MessageController.java)<br/>
-  
     
-    - :pushpin: [JSP 코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/webapp/WEB-INF/views/message/messageList.jsp)  
+  :pushpin:[Controller 코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/message/controller/MessageController.java)<br/>
+  :pushpin:[JSP 코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/webapp/WEB-INF/views/message/messageList.jsp)  
   </div>
   </details>
   <br/>
