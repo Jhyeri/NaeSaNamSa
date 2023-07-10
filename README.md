@@ -292,7 +292,7 @@
 <img width="80%" src="https://github.com/Jhyeri/NaeSaNamSa/assets/111175466/1000f3f1-058f-41ec-9f5a-7232f72119a0"/>
 
   - 이메일과 비밀번호 쿠키를 찾도록 조건을 수정
-<img width="90%" src="https://github.com/Jhyeri/NaeSaNamSa/assets/111175466/b48084b5-fe2e-475a-a934-0b32ab5975ee"/>
+<img width="80%" src="https://github.com/Jhyeri/NaeSaNamSa/assets/111175466/b48084b5-fe2e-475a-a934-0b32ab5975ee"/>
 </div>
 </details>    
 
