@@ -220,7 +220,7 @@
 <summary>상대방 닉네임을 조회하는 select문 오류</summary>
 <div markdown="1">
   
- <img width="80%" src="https://github.com/Jhyeri/NaeSaNamSa/assets/111175466/43b0448d-52b8-4a0d-ae1f-c5dfdbacc411"/>
+ <img width="80%" src="https://github.com/Jhyeri/NaeSaNamSa/assets/111175466/43b0448d-52b8-4a0d-ae1f-c5dfdbacc411"/><br/>
 - 메세지를 보내기만 하고 받은 적은 없을 경우 데이터 조회가 되지 않음
 - 다른 테이블과 조인하지 않고 회원번호에 해당하는 닉네임을 가져오도록 쿼리문 수정
   
@@ -320,10 +320,10 @@
   
   - 쿠키를 사용하여 로그인 유지 기능 구현 중, 로그인 유지에 체크했을 경우(쿠키가 존재할 경우)에만 selectId 쿼리를 호출하도록 함
   - 최근 본 상품 등 다른 쿠키가 존재하기 때문에 계속 호출됨
-<img width="60%" src="https://github.com/Jhyeri/NaeSaNamSa/assets/111175466/1000f3f1-058f-41ec-9f5a-7232f72119a0"/>
+<img width="60%" src="https://github.com/Jhyeri/NaeSaNamSa/assets/111175466/1000f3f1-058f-41ec-9f5a-7232f72119a0"/><br/>
 
   - 이메일과 비밀번호 쿠키를 찾도록 조건을 수정
-<img width="60%" src="https://github.com/Jhyeri/NaeSaNamSa/assets/111175466/b48084b5-fe2e-475a-a934-0b32ab5975ee"/>
+<img width="60%" src="https://github.com/Jhyeri/NaeSaNamSa/assets/111175466/b48084b5-fe2e-475a-a934-0b32ab5975ee"/><br/>
 </div>
 </details>    
 
