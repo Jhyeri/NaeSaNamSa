@@ -58,6 +58,7 @@
 
 ### 4.2. 메시지
   - 판매자와 구매자가 원활하게 소통하도록 메시지 기능을 제공합니다.
+
     <details>
     <summary><b>코드 확인</b></summary>
     <div markdown="1">
@@ -70,6 +71,7 @@
 
 ### 4.3. 이메일 인증 
   - JavaMail API를 사용하여 회원가입 시 이메일 인증이 이루어집니다.<br/>
+  
     <details>
     <summary><b>코드 확인</b></summary>
     <div markdown="1">
@@ -81,15 +83,16 @@
     <br/>
     
 ### 4.4. 다중 이미지 업로드 / 업로드 전 썸네일 확인 / 이미지 수정 
-  - 상품 등록, 수정 시 다중 이미지 업로드가 가능합니다. :pushpin: [코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/shop/controller/ShopController.java)
+  - 상품 등록, 수정 시 다중 이미지 업로드가 가능합니다.
   - 업로드 전 썸네일을 통해 첨부한 이미지를 미리 확인할 수 있습니다. 
-  - 이미지 수정이 간편하도록 하였습니다. :pushpin: [코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/shop/service/ShopServiceImpl.java)
-  <details>
+  - 이미지 수정이 간편하도록 하였습니다.
+    <details>
     <summary><b>코드 확인</b></summary>
     <div markdown="1">
       
     :pushpin:[코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/shop/controller/ShopController.java)<br/>
     :pushpin:[코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/shop/service/ShopServiceImpl.java)  
+
     </div>
     </details>
     <br/>
