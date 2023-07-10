@@ -54,7 +54,7 @@
 
 
 ### 4.1. 카카오페이 결제
-  - 카카오페이 API를 사용하여 간편하게 결제할 수 있습니다.  :pushpin: [코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/kakaopay/controller/KakaoPayController.java) 
+  - 카카오페이 API를 통해 간편한 결제기능을 제공합니다.  :pushpin: [코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/kakaopay/controller/KakaoPayController.java) 
 
 ### 4.2. 메시지
   - 판매자와 구매자가 원활하게 소통하도록 메시지 기능을 제공합니다.
@@ -110,7 +110,7 @@
 </br>
 
 ## 5. 담당 기능
-- 회원 정보를 다루는 부분과 메세지 기능을 담당하였습니다.
+
 
 <details>
 <summary><b>담당 기능 설명 펼치기</b></summary>
@@ -133,7 +133,7 @@
 ### 5.2.1 로그인 유지
   - **최초 이용 시** 📌[코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/member/controller/LoginController.java#L78)
     - 이메일과 비밀번호로 쿠키를 생성하고 response영역에 추가합니다. 
-  - **유지 상태로 사이트 접속 시** 📌[코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/common/interceptor/CookieInterceptor.java)
+  - **사이트 접속 시** 📌[코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/common/interceptor/CookieInterceptor.java)
     - 인터셉터를 사용하여 접속 직후 바로 로그인 처리합니다.
   
 ### 5.3. 아이디/비밀번호 찾기
