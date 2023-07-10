@@ -97,7 +97,7 @@
     <div markdown="1">
       
     - [Controller 코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/shop/controller/ShopController.java)<br/>
-    - :[Service 코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/shop/service/ShopServiceImpl.java)  
+    - [Service 코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/shop/service/ShopServiceImpl.java)  
   
     </div>
     </details>
