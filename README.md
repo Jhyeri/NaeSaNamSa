@@ -90,16 +90,16 @@
   - **이미지 수정** 
     - 이미지 수정이 간편하도록 하였습니다. <br/>
     
-  <details>
-  <summary><b>코드 확인</b></summary>
-  <div markdown="1">
-    
-  :pushpin:[Controller 코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/shop/controller/ShopController.java)<br/>
-  :pushpin:[Service 코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/shop/service/ShopServiceImpl.java)  
-
-  </div>
-  </details>
-  <br/>
+    <details>
+    <summary><b>코드 확인</b></summary>
+    <div markdown="1">
+      
+    :pushpin:[Controller 코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/shop/controller/ShopController.java)<br/>
+    :pushpin:[Service 코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/shop/service/ShopServiceImpl.java)  
+  
+    </div>
+    </details>
+    <br/>
     
 ### 4.5. 판매자 추천, 후기 작성 
   - 판매자 상세보기 페이지에서 판매자 추천기능과 후기 작성 기능을 제공합니다. :pushpin: [코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/seller/controller/SellerController.java)
@@ -110,8 +110,6 @@
 </br>
 
 ## 5. 담당 기능
-
-
 <details>
 <summary><b>담당 기능 설명 펼치기</b></summary>
 <div markdown="1">
