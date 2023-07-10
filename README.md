@@ -70,7 +70,7 @@
 
 ### 4.3. 이메일 인증 
   - JavaMail API를 사용하여 회원가입 시 이메일 인증이 이루어집니다.<br/>
-   <details>
+    <details>
     <summary><b>코드 확인</b></summary>
     <div markdown="1">
       
