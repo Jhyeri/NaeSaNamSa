@@ -41,7 +41,7 @@
 </br>
 
 ## 3. ERD 설계
-<img width="80%" src="https://github.com/Jhyeri/NaeSaNamSa/assets/111175466/fa89c85b-4296-4af5-a608-7b2dc4a9e7e1"/>
+<img width="60%" src="https://github.com/Jhyeri/NaeSaNamSa/assets/111175466/fa89c85b-4296-4af5-a608-7b2dc4a9e7e1"/>
 
 ## 4. 핵심 기능  
 - 상품에 대한 CRUD가 주기능을 이루고 있습니다.
@@ -289,10 +289,10 @@
   
   - 쿠키를 사용하여 로그인 유지 기능 구현 중, 로그인 유지에 체크했을 경우(쿠키가 존재할 경우)에만 selectId 쿼리를 호출하도록 함
   - 최근 본 상품 등 다른 쿠키가 존재하기 때문에 계속 호출됨
-<img width="80%" src="https://github.com/Jhyeri/NaeSaNamSa/assets/111175466/1000f3f1-058f-41ec-9f5a-7232f72119a0"/>
+<img width="60%" src="https://github.com/Jhyeri/NaeSaNamSa/assets/111175466/1000f3f1-058f-41ec-9f5a-7232f72119a0"/>
 
   - 이메일과 비밀번호 쿠키를 찾도록 조건을 수정
-<img width="80%" src="https://github.com/Jhyeri/NaeSaNamSa/assets/111175466/b48084b5-fe2e-475a-a934-0b32ab5975ee"/>
+<img width="60%" src="https://github.com/Jhyeri/NaeSaNamSa/assets/111175466/b48084b5-fe2e-475a-a934-0b32ab5975ee"/>
 </div>
 </details>    
 
