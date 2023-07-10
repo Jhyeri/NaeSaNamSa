@@ -43,7 +43,7 @@
 ## 3. ERD 설계
 <img width="60%" src="https://github.com/Jhyeri/NaeSaNamSa/assets/111175466/fa89c85b-4296-4af5-a608-7b2dc4a9e7e1"/>
 
-## 4. 핵심 기능  
+## 4. 프로젝트의 핵심 기능  
 - 상품에 대한 CRUD가 주기능을 이루고 있습니다.
 - 회원가입 시 이메일 인증, 그리고 사용자간의 메시지 기능 또한 제공합니다.
 
