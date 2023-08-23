@@ -66,7 +66,7 @@ public class NaverController {
 		apiURL += "&state=" + state;
 		//
 		String access_token = "";
-		String refresh_token = "";
+		//String refresh_token = "";
 		System.out.println("apiURL=" + apiURL);
 
 		//자바코드 안에서 url 요청 보내기
@@ -136,7 +136,7 @@ public class NaverController {
 		//1. 주소를 정확하게 요청하기
 		//2. 파라미터, 헤더
 		
-
+ 
 		try {
 			URL url = new URL(apiURL);
 			HttpURLConnection con = (HttpURLConnection) url.openConnection();
