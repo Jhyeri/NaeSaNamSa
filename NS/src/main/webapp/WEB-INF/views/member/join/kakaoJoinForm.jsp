@@ -393,8 +393,7 @@ $(document).ready(function() {
 		fn_nicknameCheck();
 	});
 	
-		 	//alert가 fail까지 표시되어 두번 뜸
-		   function fn_nicknameCheck() { //함수를 ajax 형식으로 수정 필요
+		   function fn_nicknameCheck() {
 		      
 		 	   var memNick = $('#MEM_NICKNAME').val();
 		       var MEM_NICKNAME = {MEM_NICKNAME : memNick};

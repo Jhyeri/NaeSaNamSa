@@ -71,7 +71,7 @@ public class KakaoController {
 
 //			int length = sb.toString().getBytes().length;
 //			con.setRequestProperty("Content-Length", String.valueOf(length));
-
+ 
 //			System.out.println("#################### params : " + sb.toString());
 
 			OutputStream os = con.getOutputStream();
