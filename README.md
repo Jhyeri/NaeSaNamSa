@@ -136,22 +136,19 @@
   
 ### 5.2.1. 로그인 유지
  - **최초 이용 시** 📌[코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/member/controller/LoginController.java#L77)
-    - 이메일과 비밀번호로 쿠키를 생성하고 response영역에 추가합니다.
+    - 이메일과 비밀번호로 쿠키를 생성하고 response영역에 추가합니다.<br/>
  - **사이트 접속 시** 📌[코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/common/interceptor/CookieInterceptor.java)<br/>
     - 인터셉터를 사용하여 접속 직후 바로 로그인 처리합니다.<br/>
   
 ### 5.2.2. 카카오 연동 로그인
  - **로그인 요청** 📌[코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/webapp/WEB-INF/views/member/login/loginSelect.jsp#L26)<br/>
      - 카카오 서버로 요청 후, 사용자가 카카오 계정으로 로그인 합니다.
-     - 로그인 성공 후, 카카오 서버로부터 인가코드를 전송 받습니다.<br/>
+     - 로그인 성공 후, 카카오 서버로부터 인가코드를 전송 받습니다.<br/><br/><br/>
  - **토큰 발급** 📌[코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/member/controller/KakaoController.java#L42)<br/>
      - POST방식으로 인가 코드 및 필수 파라미터를 전송 후, 카카오 서버로부터 액세스 토큰을 발급 받습니다.
  - **회원가입** 📌[코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/member/controller/KakaoController.java#L120)<br/>
      - GET방식으로 요청 헤더에 액세스 토큰을 전달하여 API를 호출하고, 사용자 정보를 받습니다.
      - 받은 사용자 정보를 활용하여 추가적인 회원가입을 진행하고 로그인 처리를 합니다.
- - **닉네임 중복확인** 📌[코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/member/controller/JoinController.java#L39)
-    - ajax 요청을 통해 데이터베이스로부터 사용자가 입력한 것과 동일한 닉네임을 불러옵니다.
-    - 데이터가 존재하면 "fail", 존재하지 않으면 "success" 문자열을 리턴합니다.  
 ### 5.2.3. 네이버 연동 로그인
  - **로그인 요청** 📌[코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/webapp/WEB-INF/views/member/login/loginSelect.jsp#L66) 
      - GET방식으로 필수 파라미터를 카카오 서버에 전송하여 요청합니다.
