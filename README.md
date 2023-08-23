@@ -163,7 +163,7 @@
   
   - **회원가입** 📌[코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/member/controller/NaverController.java#L124)
      - GET방식으로 요청 헤더에 접근 코드를 전달하여 네이버 회원 프로필 조회 API를 호출하고, 사용자 정보를 받습니다.
-     - 받은 사용자 정보를 활용하여 추가적인 회원가입을 진행하고 로그인 처리를 합니다.
+     - 받은 사용자 정보를 활용하여 추가적인 회원가입을 진행하고 로그인 처리를 합니다.<br/>
       
 ### 5.3. 아이디/비밀번호 찾기 📌[코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/member/controller/LoginController.java#L159)
   - ajax 요청을 통해 사용자가 입력한 정보와 일치하는 회원의 이메일을 string 형태로 리턴하여 JSP에 출력합니다. 
