@@ -19,7 +19,7 @@ pageEncoding="UTF-8"%>
       <div class="row justify-content-center mb-2">
         <div style="width:350px;">
           <h2 class="fs-5 text-start">
-            #탈퇴하실 경우, 계정 정보 및 내 상점 정보를 복구할 수 없으며, 7일간
+            탈퇴하실 경우, 계정 정보 및 내 상점 정보를 복구할 수 없으며, 7일간
             재가입 하실 수 없습니다.
           </h2>
         </div>

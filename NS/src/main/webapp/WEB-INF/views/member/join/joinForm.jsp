@@ -781,7 +781,7 @@ $(document).ready(function() {
 					code = data;
 					alert('인증번호가 전송되었습니다.')
 				}			
-			}); // end ajax
+			}); // end ajax 
 		}
 		
 		$.ajax({
