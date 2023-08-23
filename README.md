@@ -55,7 +55,9 @@
 
 
 ### 4.1. 카카오페이 결제
-  - 카카오페이 API를 통해 간편한 결제기능을 제공합니다.  :pushpin: [코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/kakaopay/controller/KakaoPayController.java)<br/>
+  - 카카오페이 API를 통해 간편한 결제기능을 제공합니다.  :pushpin: [코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/kakaopay/controller/KakaoPayController.java)
+
+<br/>
 
 
 ### 4.2. 메시지
