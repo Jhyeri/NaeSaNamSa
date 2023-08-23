@@ -135,8 +135,9 @@
 📌[코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/member/controller/LoginController.java#L48)
   
 ### 5.2.1. 로그인 유지
-  - **최초 이용 시** 📌[코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/member/controller/LoginController.java#L77)<br/>
-    - 이메일과 비밀번호로 쿠키를 생성하고 response영역에 추가합니다.<br/>
+  - **최초 이용 시** 📌[코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/member/controller/LoginController.java#L77)
+    </br>
+    - 이메일과 비밀번호로 쿠키를 생성하고 response영역에 추가합니다.
   - **사이트 접속 시** 📌[코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/common/interceptor/CookieInterceptor.java)<br/>
     - 인터셉터를 사용하여 접속 직후 바로 로그인 처리합니다.<br/>
   
