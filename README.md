@@ -142,24 +142,24 @@
   
 ### 5.2.2. 카카오 연동 로그인
  - **로그인 요청** 📌[코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/webapp/WEB-INF/views/member/login/loginSelect.jsp#L26)<br/>
-  - 카카오 서버로 요청 후, 사용자가 카카오 계정으로 로그인 합니다.
-  - 로그인 성공 후, 카카오 서버로부터 인가코드를 전송 받습니다.<br/>
+   - 카카오 서버로 요청 후, 사용자가 카카오 계정으로 로그인 합니다.
+   - 로그인 성공 후, 카카오 서버로부터 인가코드를 전송 받습니다.<br/>
  - **토큰 발급** 📌[코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/member/controller/KakaoController.java#L42)<br/>
-  - POST방식으로 인가 코드 및 필수 파라미터를 전송 후, 카카오 서버로부터 액세스 토큰을 발급 받습니다.
+   - POST방식으로 인가 코드 및 필수 파라미터를 전송 후, 카카오 서버로부터 액세스 토큰을 발급 받습니다.
  - **회원가입** 📌[코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/member/controller/KakaoController.java#L120)<br/>
-  - GET방식으로 요청 헤더에 액세스 토큰을 전달하여 API를 호출하고, 사용자 정보를 받습니다.
-  - 받은 사용자 정보를 활용하여 추가적인 회원가입을 진행하고 로그인 처리를 합니다.
+   - GET방식으로 요청 헤더에 액세스 토큰을 전달하여 API를 호출하고, 사용자 정보를 받습니다.
+   - 받은 사용자 정보를 활용하여 추가적인 회원가입을 진행하고 로그인 처리를 합니다.
 
 ### 5.2.3. 네이버 연동 로그인
  - **로그인 요청** 📌[코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/webapp/WEB-INF/views/member/login/loginSelect.jsp#L66) 
-  - GET방식으로 필수 파라미터를 카카오 서버에 전송하여 요청합니다.
-  - 사용자가 네이버 계정으로 로그인합니다.
-  - 로그인 성공 후, 네이버 서버로부터 인증코드를 전송 받습니다.<br/>
+   - GET방식으로 필수 파라미터를 카카오 서버에 전송하여 요청합니다.
+   - 사용자가 네이버 계정으로 로그인합니다.
+   - 로그인 성공 후, 네이버 서버로부터 인증코드를 전송 받습니다.<br/>
  - **토큰 발급** 📌[코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/member/controller/NaverController.java#L41)
-  - 받은 인증코드와 필수 파라미터를 GET방식으로 전송 후, 네이버 서버로부터 접근 토큰을 발급 받습니다.
+   - 받은 인증코드와 필수 파라미터를 GET방식으로 전송 후, 네이버 서버로부터 접근 토큰을 발급 받습니다.
  - **회원가입** 📌[코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/member/controller/NaverController.java#L124)
-  - GET방식으로 요청 헤더에 접근 코드를 전달하여 네이버 회원 프로필 조회 API를 호출하고, 사용자 정보를 받습니다.
-  - 받은 사용자 정보를 활용하여 추가적인 회원가입을 진행하고 로그인 처리를 합니다.
+   - GET방식으로 요청 헤더에 접근 코드를 전달하여 네이버 회원 프로필 조회 API를 호출하고, 사용자 정보를 받습니다.
+   - 받은 사용자 정보를 활용하여 추가적인 회원가입을 진행하고 로그인 처리를 합니다.
       
 ### 5.3. 아이디/비밀번호 찾기
   - ajax 요청을 통해 사용자가 입력한 정보와 일치하는 회원의 이메일을 string 형태로 리턴하여 JSP에 출력합니다. 📌[코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/member/controller/LoginController.java#L159)
