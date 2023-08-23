@@ -204,7 +204,7 @@ public class NaverController {
 
 				resultMap.put("MEM_PW", uniqueId); //우리는 테이블의 비밀번호 컬럼에 회원의 고유ID를 동일하게 넣어주었음
 				String gender = (String) resultMap.get("gender");
-				if (gender.equals("M")) { //네이버로부터 성별을 M, N으로 전송받음
+				if (gender.equals("M")) { //네이버로부터 성별을 M, F로 전송받음
 					//회원가입 할 때 주민번호 뒷자리로 성별을 구분하여 가입처리하기 때문에 1, 2로 맞췄음
 					resultMap.put("MEM_GEN", "1");
 				} else {
