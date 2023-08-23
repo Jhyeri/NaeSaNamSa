@@ -57,7 +57,6 @@
 ### 4.1. 카카오페이 결제
   - 카카오페이 API를 통해 간편한 결제기능을 제공합니다.  :pushpin: [코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/kakaopay/controller/KakaoPayController.java)
 
-<br/>
 
 
 ### 4.2. 메시지
@@ -71,7 +70,7 @@
     - [JSP 코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/webapp/WEB-INF/views/message/messageList.jsp)  
     </div>
     </details>
-    <br/>
+
 
 ### 4.3. 이메일 인증 
   - JavaMail 라이브러리를 사용하여 회원가입 시 이메일 인증이 이루어집니다.<br/>
@@ -84,7 +83,7 @@
     - [Service 코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/member/service/MailServiceImpl.java)  
     </div>
     </details>
-    <br/>
+
     
 ### 4.4. 파일 업로드
   - **다중 이미지 업로드** 
@@ -121,15 +120,15 @@
 <div markdown="1">
 
 ### 5.1. 회원가입  
-  - **닉네임 중복확인** 📌[코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/member/controller/JoinController.java#L39)
+  - **닉네임 중복확인** 📌[코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/member/controller/JoinController.java#L39)<br/>
     - ajax 요청을 통해 데이터베이스로부터 사용자가 입력한 것과 동일한 닉네임을 불러옵니다.
     - 데이터가 존재하면 "fail", 존재하지 않으면 "success" 문자열을 리턴합니다.
   
-  - **회원가입 가능 여부 체크** 📌[코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/member/controller/JoinController.java#L78)
+  - **회원가입 가능 여부 체크** 📌[코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/member/controller/JoinController.java#L78)<br/>
     - 사용자가 입력한 정보를 통해 재가입/신규가입 여부를 확인합니다.
     - 재가입일 경우, 탈퇴 후 7일이 경과하였는지 확인하고 가입을 진행합니다.
 
-### 5.2. 로그인 📌[코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/member/controller/LoginController.java#L48)
+### 5.2. 로그인 📌[코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/member/controller/LoginController.java#L48)<br/>
   - ajax 요청을 통해 사용자가 입력한 이메일을 DB로부터 조회합니다.
   - 존재하지 않는 이메일이면 "emailfail", 비밀번호가 일치하지 않으면 "pwfail", 정지된 회원이면 "suspended" 문자열을 리턴합니다.<br/>
   
