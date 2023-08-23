@@ -139,15 +139,6 @@
  - **사이트 접속 시** 📌[코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/common/interceptor/CookieInterceptor.java)<br/>
     - 인터셉터를 사용하여 접속 직후 바로 로그인 처리합니다.<br/>
 
-### 5.1. 회원가입  
-  - **닉네임 중복확인** 📌[코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/member/controller/JoinController.java#L39)
-    - ajax 요청을 통해 데이터베이스로부터 사용자가 입력한 것과 동일한 닉네임을 불러옵니다.
-    - 데이터가 존재하면 "fail", 존재하지 않으면 "success" 문자열을 리턴합니다.
-  
-  - **회원가입 가능 여부 체크** 📌[코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/member/controller/JoinController.java#L78)
-    - 사용자가 입력한 정보를 통해 재가입/신규가입 여부를 확인합니다.
-    - 재가입일 경우, 탈퇴 후 7일이 경과하였는지 확인하고 가입을 진행합니다.
-  
 ### 5.2.2. 카카오 연동 로그인
  - **로그인 요청** 📌[코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/webapp/WEB-INF/views/member/login/loginSelect.jsp#L26)<br/>
      - 카카오 서버로 요청 후, 사용자가 카카오 계정으로 로그인 합니다.
@@ -157,6 +148,17 @@
  - **회원가입** 📌[코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/member/controller/KakaoController.java#L120)<br/>
      - GET방식으로 요청 헤더에 액세스 토큰을 전달하여 API를 호출하고, 사용자 정보를 받습니다.
      - 받은 사용자 정보를 활용하여 추가적인 회원가입을 진행하고 로그인 처리를 합니다.
+
+### 5.2.2. 카카오 연동 로그인
+
+- **로그인 요청** 📌[코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/webapp/WEB-INF/views/member/login/loginSelect.jsp#L26)
+    - 카카오 서버로 요청 후, 사용자가 카카오 계정으로 로그인 합니다.
+    - 로그인 성공 후, 카카오 서버로부터 인가코드를 전송 받습니다.<br/>
+- **토큰 발급** 📌[코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/member/controller/KakaoController.java#L42)
+    - POST방식으로 인가 코드 및 필수 파라미터를 전송 후, 카카오 서버로부터 액세스 토큰을 발급 받습니다.
+- **회원가입** 📌[코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/member/controller/KakaoController.java#L120)
+    - GET방식으로 요청 헤더에 액세스 토큰을 전달하여 API를 호출하고, 사용자 정보를 받습니다.
+    - 받은 사용자 정보를 활용하여 추가적인 회원가입을 진행하고 로그인 처리를 합니다.
 
 ### 5.2.3. 네이버 연동 로그인
  - **로그인 요청** 📌[코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/webapp/WEB-INF/views/member/login/loginSelect.jsp#L66)<br/>
