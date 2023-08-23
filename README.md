@@ -133,10 +133,10 @@
   - 존재하지 않는 이메일이면 "emailfail", 비밀번호가 일치하지 않으면 "pwfail", 정지된 회원이면 "suspended" 문자열을 리턴합니다.<br/>
   
 ### 5.2.1. 로그인 유지
- - **최초 이용 시** 📌[코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/member/controller/LoginController.java#L77)<br/>
-   - 이메일과 비밀번호로 쿠키를 생성하고 response영역에 추가합니다.<br/>
- - **사이트 접속 시** 📌[코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/common/interceptor/CookieInterceptor.java)<br/>
-   - 인터셉터를 사용하여 접속 직후 바로 로그인 처리합니다.<br/>
+  - **최초 이용 시** 📌[코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/member/controller/LoginController.java#L77)<br/>
+    - 이메일과 비밀번호로 쿠키를 생성하고 response영역에 추가합니다.<br/>
+   - **사이트 접속 시** 📌[코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/common/interceptor/CookieInterceptor.java)<br/>
+    - 인터셉터를 사용하여 접속 직후 바로 로그인 처리합니다.<br/>
 
 ### 5.2.2. 카카오 연동 로그인
   - **로그인 요청** 📌[코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/webapp/WEB-INF/views/member/login/loginSelect.jsp#L26)<br/>
