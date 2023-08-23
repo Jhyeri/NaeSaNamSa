@@ -28,11 +28,11 @@
 #### `WAS`
   - Apache Tomcat 9.0
 
-#### `API`
+#### `API & 라이브러리`
   - 네이버 로그인 API
   - 카카오 로그인 API
   - 카카오페이 API
-  - JavaMail API
+  - JavaMail 라이브러리
   - RESTful API(JSON)
 
 #### `IDE`
