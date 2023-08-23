@@ -137,7 +137,8 @@
     - 이메일과 비밀번호로 쿠키를 생성하고 response영역에 추가합니다.<br/>
    - **사이트 접속 시** 📌[코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/common/interceptor/CookieInterceptor.java)<br/>
     - 인터셉터를 사용하여 접속 직후 바로 로그인 처리합니다.<br/>
-
+  - **닉네임 중복확인** 📌[코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/member/controller/JoinController.java#L39)<br/>
+    - ajax 요청을 통해 데이터베이스로부터 사용자가 입력한 것과 동일한 닉네임을 불러옵니다.
 ### 5.2.2. 카카오 연동 로그인
   - **로그인 요청** 📌[코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/webapp/WEB-INF/views/member/login/loginSelect.jsp#L26)<br/>
     - 카카오 서버로 요청 후, 사용자가 카카오 계정으로 로그인 합니다.<br/>
