@@ -74,7 +74,7 @@
     <br/>
 
 ### 4.3. 이메일 인증 
-  - JavaMail API를 사용하여 회원가입 시 이메일 인증이 이루어집니다.<br/>
+  - JavaMail 라이브러리를 사용하여 회원가입 시 이메일 인증이 이루어집니다.<br/>
   
     <details>
     <summary><b>:pushpin: 코드 확인</b></summary>
@@ -107,8 +107,8 @@
     </details>
     <br/>
     
-### 4.5. 판매자 추천, 후기 작성 
-  - 판매자 상세보기 페이지에서 판매자 추천기능과 후기 작성 기능을 제공합니다. :pushpin: [코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/seller/controller/SellerController.java)
+<!-- ### 4.5. 판매자 추천, 후기 작성 
+  - 판매자 상세보기 페이지에서 판매자 추천기능과 후기 작성 기능을 제공합니다. :pushpin: [코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/seller/controller/SellerController.java) -->
 
 </div>
 </details>
@@ -128,36 +128,36 @@
   - **회원가입 가능 여부 체크** 📌[코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/member/controller/JoinController.java#L78)
     - 사용자가 입력한 정보를 통해 재가입/신규가입 여부를 확인합니다.
     - 재가입일 경우, 탈퇴 후 7일이 경과하였는지 확인하고 가입을 진행합니다.
-  
+
 ### 5.2. 로그인
   - ajax 요청을 통해 사용자가 입력한 이메일을 DB로부터 조회합니다.
   - 존재하지 않는 이메일이면 "emailfail", 비밀번호가 일치하지 않으면 "pwfail", 정지된 회원이면 "suspended" 문자열을 리턴합니다.<br/>
 📌[코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/member/controller/LoginController.java#L48)
   
 ### 5.2.1 로그인 유지
-  - **최초 이용 시** 📌[코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/member/controller/LoginController.java#L78)
+  - **최초 이용 시** 📌[코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/member/controller/LoginController.java#L77)
     - 이메일과 비밀번호로 쿠키를 생성하고 response영역에 추가합니다. 
   - **사이트 접속 시** 📌[코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/common/interceptor/CookieInterceptor.java)
     - 인터셉터를 사용하여 접속 직후 바로 로그인 처리합니다.
    
 ### 5.2.2 카카오 연동 로그인
-    - **로그인 요청** 📌[코드 확인](loginSelect 버튼)
+    - **로그인 요청** 📌[코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/webapp/WEB-INF/views/member/login/loginSelect.jsp#L26)
       - 카카오 서버로 요청 후, 사용자가 카카오 계정으로 로그인 합니다.
       - 로그인 성공 후, 카카오 서버로부터 인가코드를 전송 받습니다.
-    - **토큰 발급** 📌[코드 확인](카카오 컨트롤러)
+    - **토큰 발급** 📌[코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/member/controller/KakaoController.java#L42)
       - POST방식으로 인가 코드 및 필수 파라미터를 전송 후, 카카오 서버로부터 액세스 토큰을 발급 받습니다.
-    - **회원가입** 📌[코드 확인](카카오 컨트롤러)
+    - **회원가입** 📌[코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/member/controller/KakaoController.java#L120)
       - GET방식으로 요청 헤더에 액세스 토큰을 전달하여 API를 호출하고, 사용자 정보를 받습니다.
       - 받은 사용자 정보를 활용하여 추가적인 회원가입을 진행하고 로그인 처리를 합니다.
 
 ### 5.2.3 네이버 연동 로그인
-    -  **로그인 요청** 📌[코드 확인](loginSelect 버튼) 
-      - 필수 파라미터를 GET방식으로 카카오 서버에 전송하여 요청합니다.
+    -  **로그인 요청** 📌[코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/webapp/WEB-INF/views/member/login/loginSelect.jsp#L66) 
+      - GET방식으로 필수 파라미터를 카카오 서버에 전송하여 요청합니다.
       - 사용자가 네이버 계정으로 로그인합니다.
       - 로그인 성공 후, 네이버 서버로부터 인증코드를 전송 받습니다.
-    - **토큰 발급** 📌[코드 확인](loginSelect 버튼)
-      - GET방식으로 인증코드와 필수 파라미터를 전송 후, 네이버 서버로부터 접근 토큰을 발급 받습니다.
-    - **회원가입** 📌[코드 확인](loginSelect 버튼)
+    - **토큰 발급** 📌[코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/member/controller/NaverController.java#L41)
+      - 받은 인증코드와 필수 파라미터를 GET방식으로 전송 후, 네이버 서버로부터 접근 토큰을 발급 받습니다.
+    - **회원가입** 📌[코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/member/controller/NaverController.java#L124)
       - GET방식으로 요청 헤더에 접근 코드를 전달하여 네이버 회원 프로필 조회 API를 호출하고, 사용자 정보를 받습니다.
       - 받은 사용자 정보를 활용하여 추가적인 회원가입을 진행하고 로그인 처리를 합니다.
       
@@ -177,18 +177,23 @@
     - 메세지 내용, 안 읽은 메세지 개수, 상대 회원의 정보를 불러옵니다.
     - 상대 회원의 정보를 불러오기 위해 각 메세지의 발신자와 수신자의 회원번호를 로그인 유저와 비교하여 상대의 회원번호를 추출합니다.
   
-  - **메세지 목록 새로고침** :pushpin: [코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/message/controller/MessageController.java#L107)
+  - **메세지 목록 새로고침** :pushpin: [코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/message/controller/MessageController.java#L95)
     - 사용자의 모든 요청이 발생할 때마다 ajax 요청을 통해 메세지 목록을 리로드하여 새 메세지가 실시간으로 보이도록 합니다.
   
-  - **메세지 상세보기** 📌 [코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/message/controller/MessageController.java#L189)
+  - **메세지 상세보기** 📌 [코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/message/controller/MessageController.java#L166)
     - ajax 요청을 통해 채팅방 내용을 비동기식으로 불러옵니다.
     - 채팅방 클릭 시 새 메세지를 읽음처리하여 DB에 반영합니다.
   
-  - **메세지 전송** 📌 [코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/message/controller/MessageController.java#L238)
+  - **메세지 전송** 📌 [코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/message/controller/MessageController.java#L206)
     - 두 회원 간 메세지를 주고받은 이력이 있는지 체크합니다.
       - 이력이 없다면 DB에서 가져 온 채팅방 번호의 최대값에 1을 더하여 새로운 번호의 채팅방을 생성합니다.
        - 메세지함이 아닌 다른 페이지에서 메세지를 전송할 경우, "viewName"이라는 string 형태의 파라미터를 추가로 전송하여 view를 다르게 처리합니다. 
 
+### 5.6. 접근 경로 제한
+  - **비회원 접근 제한** 📌 [코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/common/interceptor/LoginInterceptor)
+    - 비로그인 상태에서 로그인이 필요한 기능에 접근할 경우, 인터셉터를 통해 로그인 화면으로 리다이렉트 합니다.
+  - **관리자 페이지 접근 제한** 📌 [코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/common/interceptor/LoginInterceptor.java)
+    - 관리자 페이지에 일반 회원이 접근할 경우, alert창을 통해 접근을 제한합니다.
 </div>
 </details>
 
