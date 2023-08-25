@@ -22,7 +22,6 @@
   - CSS3
   - JavaScript
   - Ajax
-  - jQuery
   - bootstrap
 
 #### `WAS`
@@ -34,6 +33,7 @@
   - 카카오페이 API
   - JavaMail 라이브러리
   - RESTful API(JSON)
+  - jQuery
 
 #### `IDE`
   - Spring Tool Suite 3
