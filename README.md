@@ -56,7 +56,7 @@
 
 ### 4.1. 카카오페이 결제
   - 카카오페이 API를 통해 간편한 결제기능을 제공합니다.  :pushpin: [코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/kakaopay/controller/KakaoPayController.java)
-
+<br/>
 
 
 ### 4.2. 메시지
@@ -70,7 +70,7 @@
     - [JSP 코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/webapp/WEB-INF/views/message/messageList.jsp)  
     </div>
     </details>
-
+<br/>
 
 ### 4.3. 이메일 인증 
   - JavaMail 라이브러리를 사용하여 회원가입 시 이메일 인증이 이루어집니다.<br/>
@@ -83,7 +83,7 @@
     - [Service 코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/member/service/MailServiceImpl.java)  
     </div>
     </details>
-
+<br/>
     
 ### 4.4. 파일 업로드
   - **다중 이미지 업로드** 
@@ -136,29 +136,36 @@
     - 사용자가 입력한 정보를 통해 재가입/신규가입 여부를 확인합니다.
     - 재가입일 경우, 탈퇴 후 7일이 경과하였는지 확인하고 가입을 진행합니다.
 
+<br/>
+
 ### 5.2. 로그인
   - ajax 요청을 통해 사용자가 입력한 이메일을 DB로부터 조회합니다.
   - 존재하지 않는 이메일이면 "emailfail", 비밀번호가 일치하지 않으면 "pwfail", 정지된 회원이면 "suspended" 문자열을 리턴합니다.<br/>
   📌[코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/member/controller/LoginController.java#L48)<br/>
+
+<br/>
   
 ### 5.2.1. 로그인 유지
   - **최초 이용 시** 📌[코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/member/controller/LoginController.java#L77)
     - 이메일과 비밀번호로 쿠키를 생성하고 response영역에 추가합니다.
 
   - **사이트 접속 시** 📌[코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/common/interceptor/CookieInterceptor.java)
-    - 인터셉터를 사용하여 접속 직후 바로 로그인 처리합니다.<br/>
+    - 인터셉터를 사용하여 접속 직후 바로 로그인 처리합니다.
+
+<br/>
 
 ### 5.2.2. 카카오 연동 로그인
   - **로그인 요청** 📌[코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/webapp/WEB-INF/views/member/login/loginSelect.jsp#L26)
     - 카카오 서버로 요청 후, 사용자가 카카오 계정으로 로그인 합니다.
     - 로그인 성공 후, 카카오 서버로부터 인가코드를 전송 받습니다.
-    
+
   - **토큰 발급** 📌[코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/member/controller/KakaoController.java#L42)
     - POST방식으로 인가 코드 및 필수 파라미터를 전송 후, 카카오 서버로부터 액세스 토큰을 발급 받습니다.
   
   - **회원가입** 📌[코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/member/controller/KakaoController.java#L120)
     - GET방식으로 요청 헤더에 액세스 토큰을 전달하여 API를 호출하고, 사용자 정보를 받습니다.
     - 받은 사용자 정보를 활용하여 추가적인 회원가입을 진행하고 로그인 처리를 합니다.
+<br/>
 
 ### 5.2.3. 네이버 연동 로그인
    - **로그인 요청** 📌[코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/webapp/WEB-INF/views/member/login/loginSelect.jsp#L66)
@@ -172,10 +179,12 @@
   - **회원가입** 📌[코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/member/controller/NaverController.java#L124)
      - GET방식으로 요청 헤더에 접근 코드를 전달하여 네이버 회원 프로필 조회 API를 호출하고, 사용자 정보를 받습니다.
      - 받은 사용자 정보를 활용하여 추가적인 회원가입을 진행하고 로그인 처리를 합니다.<br/>
-      
+<br/>
+
 ### 5.3. 아이디/비밀번호 찾기 📌[코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/member/controller/LoginController.java#L159)
   - ajax 요청을 통해 사용자가 입력한 정보와 일치하는 회원의 이메일을 string 형태로 리턴하여 JSP에 출력합니다. 
-  
+<br/>
+
 ### 5.4. 마이페이지  
   - **회원정보 수정** 📌[코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/myPage/controller/MyPageController.java#L115)
   
@@ -183,6 +192,7 @@
     - 데이터베이스에서 회원의 탈퇴여부를 'Y'로 update합니다.
     - 회원이 등록한 상품의 삭제여부도 'Y'로 update합니다.
     - 로그인 유지를 위해 생성하였던 쿠키를 삭제합니다.
+<br/>
 
 ### 5.5. 메세지
  - **메세지 목록** :pushpin: [코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/message/controller/MessageController.java#L30)
@@ -200,6 +210,7 @@
     - 두 회원 간 메세지를 주고받은 이력이 있는지 체크합니다.
       - 이력이 없다면 DB에서 가져 온 채팅방 번호의 최대값에 1을 더하여 새로운 번호의 채팅방을 생성합니다.
        - 메세지함이 아닌 다른 페이지에서 메세지를 전송할 경우, "viewName"이라는 string 형태의 파라미터를 추가로 전송하여 view를 다르게 처리합니다. 
+<br/>
 
 ### 5.6. 접근 경로 제한
   - **비회원 접근 제한** 📌 [코드 확인](https://github.com/Jhyeri/NaeSaNamSa/blob/main/NS/src/main/java/ns/common/interceptor/LoginInterceptor)
