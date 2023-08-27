@@ -41,7 +41,7 @@
 </br>
 
 ## 3. ERD 설계
-<img width="60%" src="https://github.com/Jhyeri/NaeSaNamSa/assets/111175466/fa89c85b-4296-4af5-a608-7b2dc4a9e7e1"/>
+<img width="60%" src="https://github.com/Jhyeri/NaeSaNamSa/assets/111175466/976242d2-8f00-4f9b-b8fe-aaa6d0a5dba2"/>
 <br/>
 <br/>
 
