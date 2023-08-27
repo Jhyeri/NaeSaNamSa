@@ -250,6 +250,7 @@
 </br>
 
 ## 7. 그 외 트러블 슈팅
+
 아래 링크를 통해 더 많은 트러블 슈팅을 확인하실 수 있습니다.
 [트러블 슈팅 모음](https://snow-lifter-a27.notion.site/Study-d28c1ad8ca5d46d59d75339bc0b989da?pvs=4)
 
