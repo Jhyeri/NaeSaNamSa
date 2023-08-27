@@ -255,6 +255,7 @@
 [**📌 트러블 슈팅 모음**](https://snow-lifter-a27.notion.site/Study-d28c1ad8ca5d46d59d75339bc0b989da?pvs=4)
 <br/>
 
+<!--
 <details>
 <summary>ajax 함수가 data를 받지 못하는 오류</summary>
 <div markdown="1">
@@ -400,4 +401,4 @@
  
 </div>
 </details>  
-    
+-->    
